@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Validering av formulär</title>
+<body>
+  <div class="wrapper">
+
+    <form id="validationForm" class="validation-form" action="/">
+      <div class="headline">
+        <h1>Validation Form</h1>
+      </div>
+      <div class="form-content">
+
+        <div class="input-group">
+          <label for="firstName" class="input-label">First Name:</label>
+          <input type="text" placeholder="Enter your name" id="firstName" class="form-control">
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="lastName" class="input-label">Last Name:</label>
+          <input type="text" placeholder="Enter your last name" id="lastName" class="form-control">
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="email" class="input-label">Email:</label>
+          <input type="email" placeholder="Enter your email address" id="email" class="form-control">
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="input-label">Password:</label>
+          <input type="password" placeholder="Must have atleast 6 characters" id="password" class="form-control">
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="repeatPassword" class="input-label">Repeat Password:</label>
+          <input type="password" placeholder="Confirm password" id="repeatPassword" class="form-control">
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div class="input-group">
+          <input name="terms" type="checkbox" id="terms">
+          <label for="terms">Accept terms and conditions</label>
+          <p class="errorMessage d-none"></p>
+        </div>
+
+        <div>
+          <button class="btn btn-block btn-primary">Validate</button>
+        </div>
+
+      </div>
+
+      <div class="validation-feedback">
+        <p class="errorMessage d-none">Alla fält måste vara korrekt ifyllda!</p>
+      </div>
+
+    </form>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
